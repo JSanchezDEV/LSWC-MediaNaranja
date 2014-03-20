@@ -14,19 +14,11 @@
 
 @implementation DeathDateViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.deathDatePicker.date = self.deathDate;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,7 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -43,7 +35,10 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"Death OK"]) {
+        self.deathDate = self.deathDatePicker.date;
+    }
 }
-*/
+
 
 @end
