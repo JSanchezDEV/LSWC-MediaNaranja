@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstDateViewController : UIViewController
-
+@property (strong, nonatomic) NSDate* firstDate;
 @end
