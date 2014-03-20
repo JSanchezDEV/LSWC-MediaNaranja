@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03238F0B18DB083F00A39F93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03238F0A18DB083F00A39F93 /* Foundation.framework */; };
+		03238F0D18DB083F00A39F93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03238F0C18DB083F00A39F93 /* CoreGraphics.framework */; };
+		03238F0F18DB083F00A39F93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03238F0E18DB083F00A39F93 /* UIKit.framework */; };
+		03238F1518DB083F00A39F93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03238F1318DB083F00A39F93 /* InfoPlist.strings */; };
+		03238F1718DB083F00A39F93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03238F1618DB083F00A39F93 /* main.m */; };
+		03238F1B18DB083F00A39F93 /* MediaNaranjaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03238F1A18DB083F00A39F93 /* MediaNaranjaAppDelegate.m */; };
+		03238F1E18DB083F00A39F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03238F1C18DB083F00A39F93 /* Main.storyboard */; };
+		03238F2118DB083F00A39F93 /* MediaNaranjaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03238F2018DB083F00A39F93 /* MediaNaranjaViewController.m */; };
+		03238F2318DB083F00A39F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03238F2218DB083F00A39F93 /* Images.xcassets */; };
+		03238F2A18DB083F00A39F93 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03238F2918DB083F00A39F93 /* XCTest.framework */; };
+		03238F2B18DB083F00A39F93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03238F0A18DB083F00A39F93 /* Foundation.framework */; };
+		03238F2C18DB083F00A39F93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03238F0E18DB083F00A39F93 /* UIKit.framework */; };
+		03238F3418DB083F00A39F93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03238F3218DB083F00A39F93 /* InfoPlist.strings */; };
+		03238F3618DB083F00A39F93 /* Media_NaranjaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03238F3518DB083F00A39F93 /* Media_NaranjaTests.m */; };
+		E328F7FA18DB329500290997 /* BirthDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E328F7F918DB329500290997 /* BirthDateViewController.m */; };
+		E328F7FD18DB366A00290997 /* FirstDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E328F7FC18DB366A00290997 /* FirstDateViewController.m */; };
+		E328F80018DB369C00290997 /* DeathDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E328F7FF18DB369C00290997 /* DeathDateViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03238F2D18DB083F00A39F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03238EFF18DB083F00A39F93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03238F0618DB083F00A39F93;
+			remoteInfo = "Media Naranja";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03238F0718DB083F00A39F93 /* Media Naranja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Media Naranja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03238F0A18DB083F00A39F93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03238F0C18DB083F00A39F93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03238F0E18DB083F00A39F93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03238F1218DB083F00A39F93 /* Media Naranja-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Media Naranja-Info.plist"; sourceTree = "<group>"; };
+		03238F1418DB083F00A39F93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03238F1618DB083F00A39F93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03238F1818DB083F00A39F93 /* Media Naranja-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Media Naranja-Prefix.pch"; sourceTree = "<group>"; };
+		03238F1918DB083F00A39F93 /* MediaNaranjaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaNaranjaAppDelegate.h; sourceTree = "<group>"; };
+		03238F1A18DB083F00A39F93 /* MediaNaranjaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaNaranjaAppDelegate.m; sourceTree = "<group>"; };
+		03238F1D18DB083F00A39F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03238F1F18DB083F00A39F93 /* MediaNaranjaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaNaranjaViewController.h; sourceTree = "<group>"; };
+		03238F2018DB083F00A39F93 /* MediaNaranjaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaNaranjaViewController.m; sourceTree = "<group>"; };
+		03238F2218DB083F00A39F93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		03238F2818DB083F00A39F93 /* Media NaranjaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Media NaranjaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03238F2918DB083F00A39F93 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		03238F3118DB083F00A39F93 /* Media NaranjaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Media NaranjaTests-Info.plist"; sourceTree = "<group>"; };
+		03238F3318DB083F00A39F93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03238F3518DB083F00A39F93 /* Media_NaranjaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Media_NaranjaTests.m; sourceTree = "<group>"; };
+		E328F7F818DB329500290997 /* BirthDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthDateViewController.h; sourceTree = "<group>"; };
+		E328F7F918DB329500290997 /* BirthDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthDateViewController.m; sourceTree = "<group>"; };
+		E328F7FB18DB366A00290997 /* FirstDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDateViewController.h; sourceTree = "<group>"; };
+		E328F7FC18DB366A00290997 /* FirstDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDateViewController.m; sourceTree = "<group>"; };
+		E328F7FE18DB369C00290997 /* DeathDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathDateViewController.h; sourceTree = "<group>"; };
+		E328F7FF18DB369C00290997 /* DeathDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathDateViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03238F0418DB083F00A39F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03238F0D18DB083F00A39F93 /* CoreGraphics.framework in Frameworks */,
+				03238F0F18DB083F00A39F93 /* UIKit.framework in Frameworks */,
+				03238F0B18DB083F00A39F93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03238F2518DB083F00A39F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03238F2A18DB083F00A39F93 /* XCTest.framework in Frameworks */,
+				03238F2C18DB083F00A39F93 /* UIKit.framework in Frameworks */,
+				03238F2B18DB083F00A39F93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03238EFE18DB083F00A39F93 = {
+			isa = PBXGroup;
+			children = (
+				03238F1018DB083F00A39F93 /* Media Naranja */,
+				03238F2F18DB083F00A39F93 /* Media NaranjaTests */,
+				03238F0918DB083F00A39F93 /* Frameworks */,
+				03238F0818DB083F00A39F93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03238F0818DB083F00A39F93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03238F0718DB083F00A39F93 /* Media Naranja.app */,
+				03238F2818DB083F00A39F93 /* Media NaranjaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03238F0918DB083F00A39F93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03238F0A18DB083F00A39F93 /* Foundation.framework */,
+				03238F0C18DB083F00A39F93 /* CoreGraphics.framework */,
+				03238F0E18DB083F00A39F93 /* UIKit.framework */,
+				03238F2918DB083F00A39F93 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03238F1018DB083F00A39F93 /* Media Naranja */ = {
+			isa = PBXGroup;
+			children = (
+				03238F1918DB083F00A39F93 /* MediaNaranjaAppDelegate.h */,
+				03238F1A18DB083F00A39F93 /* MediaNaranjaAppDelegate.m */,
+				03238F1C18DB083F00A39F93 /* Main.storyboard */,
+				E328F7F818DB329500290997 /* BirthDateViewController.h */,
+				E328F7F918DB329500290997 /* BirthDateViewController.m */,
+				03238F1F18DB083F00A39F93 /* MediaNaranjaViewController.h */,
+				03238F2018DB083F00A39F93 /* MediaNaranjaViewController.m */,
+				E328F7FB18DB366A00290997 /* FirstDateViewController.h */,
+				E328F7FC18DB366A00290997 /* FirstDateViewController.m */,
+				E328F7FE18DB369C00290997 /* DeathDateViewController.h */,
+				E328F7FF18DB369C00290997 /* DeathDateViewController.m */,
+				03238F2218DB083F00A39F93 /* Images.xcassets */,
+				03238F1118DB083F00A39F93 /* Supporting Files */,
+			);
+			path = "Media Naranja";
+			sourceTree = "<group>";
+		};
+		03238F1118DB083F00A39F93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03238F1218DB083F00A39F93 /* Media Naranja-Info.plist */,
+				03238F1318DB083F00A39F93 /* InfoPlist.strings */,
+				03238F1618DB083F00A39F93 /* main.m */,
+				03238F1818DB083F00A39F93 /* Media Naranja-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03238F2F18DB083F00A39F93 /* Media NaranjaTests */ = {
+			isa = PBXGroup;
+			children = (
+				03238F3518DB083F00A39F93 /* Media_NaranjaTests.m */,
+				03238F3018DB083F00A39F93 /* Supporting Files */,
+			);
+			path = "Media NaranjaTests";
+			sourceTree = "<group>";
+		};
+		03238F3018DB083F00A39F93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03238F3118DB083F00A39F93 /* Media NaranjaTests-Info.plist */,
+				03238F3218DB083F00A39F93 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03238F0618DB083F00A39F93 /* Media Naranja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03238F3918DB083F00A39F93 /* Build configuration list for PBXNativeTarget "Media Naranja" */;
+			buildPhases = (
+				03238F0318DB083F00A39F93 /* Sources */,
+				03238F0418DB083F00A39F93 /* Frameworks */,
+				03238F0518DB083F00A39F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Media Naranja";
+			productName = "Media Naranja";
+			productReference = 03238F0718DB083F00A39F93 /* Media Naranja.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03238F2718DB083F00A39F93 /* Media NaranjaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03238F3C18DB083F00A39F93 /* Build configuration list for PBXNativeTarget "Media NaranjaTests" */;
+			buildPhases = (
+				03238F2418DB083F00A39F93 /* Sources */,
+				03238F2518DB083F00A39F93 /* Frameworks */,
+				03238F2618DB083F00A39F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03238F2E18DB083F00A39F93 /* PBXTargetDependency */,
+			);
+			name = "Media NaranjaTests";
+			productName = "Media NaranjaTests";
+			productReference = 03238F2818DB083F00A39F93 /* Media NaranjaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03238EFF18DB083F00A39F93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MediaNaranja;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "g102 DIT UPM";
+				TargetAttributes = {
+					03238F2718DB083F00A39F93 = {
+						TestTargetID = 03238F0618DB083F00A39F93;
+					};
+				};
+			};
+			buildConfigurationList = 03238F0218DB083F00A39F93 /* Build configuration list for PBXProject "Media Naranja" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03238EFE18DB083F00A39F93;
+			productRefGroup = 03238F0818DB083F00A39F93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03238F0618DB083F00A39F93 /* Media Naranja */,
+				03238F2718DB083F00A39F93 /* Media NaranjaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03238F0518DB083F00A39F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03238F2318DB083F00A39F93 /* Images.xcassets in Resources */,
+				03238F1518DB083F00A39F93 /* InfoPlist.strings in Resources */,
+				03238F1E18DB083F00A39F93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03238F2618DB083F00A39F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03238F3418DB083F00A39F93 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03238F0318DB083F00A39F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03238F1718DB083F00A39F93 /* main.m in Sources */,
+				03238F1B18DB083F00A39F93 /* MediaNaranjaAppDelegate.m in Sources */,
+				03238F2118DB083F00A39F93 /* MediaNaranjaViewController.m in Sources */,
+				E328F7FA18DB329500290997 /* BirthDateViewController.m in Sources */,
+				E328F7FD18DB366A00290997 /* FirstDateViewController.m in Sources */,
+				E328F80018DB369C00290997 /* DeathDateViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03238F2418DB083F00A39F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03238F3618DB083F00A39F93 /* Media_NaranjaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03238F2E18DB083F00A39F93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03238F0618DB083F00A39F93 /* Media Naranja */;
+			targetProxy = 03238F2D18DB083F00A39F93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03238F1318DB083F00A39F93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03238F1418DB083F00A39F93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		03238F1C18DB083F00A39F93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03238F1D18DB083F00A39F93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03238F3218DB083F00A39F93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03238F3318DB083F00A39F93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03238F3718DB083F00A39F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03238F3818DB083F00A39F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03238F3A18DB083F00A39F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Media Naranja/Media Naranja-Prefix.pch";
+				INFOPLIST_FILE = "Media Naranja/Media Naranja-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		03238F3B18DB083F00A39F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Media Naranja/Media Naranja-Prefix.pch";
+				INFOPLIST_FILE = "Media Naranja/Media Naranja-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		03238F3D18DB083F00A39F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Media Naranja.app/Media Naranja";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Media Naranja/Media Naranja-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Media NaranjaTests/Media NaranjaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		03238F3E18DB083F00A39F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Media Naranja.app/Media Naranja";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Media Naranja/Media Naranja-Prefix.pch";
+				INFOPLIST_FILE = "Media NaranjaTests/Media NaranjaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03238F0218DB083F00A39F93 /* Build configuration list for PBXProject "Media Naranja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03238F3718DB083F00A39F93 /* Debug */,
+				03238F3818DB083F00A39F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03238F3918DB083F00A39F93 /* Build configuration list for PBXNativeTarget "Media Naranja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03238F3A18DB083F00A39F93 /* Debug */,
+				03238F3B18DB083F00A39F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03238F3C18DB083F00A39F93 /* Build configuration list for PBXNativeTarget "Media NaranjaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03238F3D18DB083F00A39F93 /* Debug */,
+				03238F3E18DB083F00A39F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03238EFF18DB083F00A39F93 /* Project object */;
+}
