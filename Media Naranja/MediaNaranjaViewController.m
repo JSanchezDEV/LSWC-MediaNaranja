@@ -16,6 +16,9 @@
 @property (strong, nonatomic) NSDate* fillBirthDate;
 @property (strong, nonatomic) NSDate* fillFirstDate;
 @property (strong, nonatomic) NSDate* fillDeathDate;
+@property (weak, nonatomic) IBOutlet UILabel *birthDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *firstDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deathDateLabel;
 
 @end
 
@@ -67,7 +70,7 @@
     NSDateFormatter *format = [[NSDateFormatter alloc]init];
     [format setDateFormat:@"dd-MM-yyyy"];
     self.fillBirthDate = chooseDateVC.birthDate;
-    self.dateLabel.text = [format stringFromDate:self.fillBirthDate];
+    self.birthDateLabel.text = [format stringFromDate:self.fillBirthDate];
 }
 
 - (IBAction)BirthCancel:(UIStoryboardSegue*)segue {}
@@ -78,7 +81,7 @@
     NSDateFormatter *format = [[NSDateFormatter alloc]init];
     [format setDateFormat:@"dd-MM-yyyy"];
     self.fillFirstDate = chooseDateVC.firstDate;
-    self.dateLabel.text = [format stringFromDate:self.fillFirstDate];
+    self.firstDateLabel.text = [format stringFromDate:self.fillFirstDate];
 }
 
 - (IBAction)FirstCancel:(UIStoryboardSegue*)segue {}
@@ -88,9 +91,10 @@
     NSDateFormatter *format = [[NSDateFormatter alloc]init];
     [format setDateFormat:@"dd-MM-yyyy"];
     self.fillDeathDate = chooseDateVC.deathDate;
-    self.dateLabel.text = [format stringFromDate:self.fillDeathDate];
+    self.deathDateLabel.text = [format stringFromDate:self.fillDeathDate];
 }
 
 - (IBAction)DeathCancel:(UIStoryboardSegue*)segue {}
 
 @end
+

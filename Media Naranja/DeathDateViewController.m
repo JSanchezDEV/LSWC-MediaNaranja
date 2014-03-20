@@ -9,6 +9,7 @@
 #import "DeathDateViewController.h"
 
 @interface DeathDateViewController ()
+@property (weak, nonatomic) IBOutlet UIDatePicker *deathDatePicker;
 
 @end
 

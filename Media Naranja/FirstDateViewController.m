@@ -9,6 +9,7 @@
 #import "FirstDateViewController.h"
 
 @interface FirstDateViewController ()
+@property (weak, nonatomic) IBOutlet UIDatePicker *firstDatePicker;
 
 @end
 
