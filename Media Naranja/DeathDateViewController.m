@@ -20,6 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.deathDatePicker.date = self.deathDate;
+    if (self.firstDate) {
+        [self.deathDatePicker setMinimumDate:self.firstDate];
+    } else if (self.birthDate) {
+        [self.deathDatePicker setMinimumDate:self.birthDate];
+    }
 }
 
 - (void)didReceiveMemoryWarning

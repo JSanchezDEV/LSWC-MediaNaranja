@@ -10,7 +10,6 @@
 
 @interface FirstDateViewController ()
 @property (weak, nonatomic) IBOutlet UIDatePicker *firstDatePicker;
-
 @end
 
 @implementation FirstDateViewController
@@ -20,6 +19,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.firstDatePicker.date = self.firstDate;
+    if (self.birthDate) {
+        [self.firstDatePicker setMinimumDate:self.birthDate];
+    }
+    if (self.deathDate) {
+        NSDate * earlier = [self.deathDate earlierDate:[NSDate date]];
+        [self.firstDatePicker setMaximumDate:earlier];
+    } else {
+        [self.firstDatePicker setMaximumDate:[NSDate date]];
+    }
 }
 
 - (void)didReceiveMemoryWarning

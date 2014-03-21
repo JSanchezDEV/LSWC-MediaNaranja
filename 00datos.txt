@@ -1,0 +1,13 @@
+LSWC - Práctica 3 - Media Naranja
+GRUPO 102:
+Daniel Sánchez Seijo
+José Santos Sánchez Sánchez
+
+AUTOEVALUACIÓN:
+Funciona: 10 puntos
+Uso de iconos e imágenes: 2 puntos
+Layout y rotación del terminal: 4 puntos
+Mejora coherencia de fechas: 2 puntos
+Mejoras libres: 2 puntos
+
+Descripción de mejora: Consiste en la introducción de una imagen que se pinta parcialmente en función del 'porcentaje de naranja'.

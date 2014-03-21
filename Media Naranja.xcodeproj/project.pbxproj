@@ -21,6 +21,7 @@
 		03238F2C18DB083F00A39F93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03238F0E18DB083F00A39F93 /* UIKit.framework */; };
 		03238F3418DB083F00A39F93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03238F3218DB083F00A39F93 /* InfoPlist.strings */; };
 		03238F3618DB083F00A39F93 /* Media_NaranjaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03238F3518DB083F00A39F93 /* Media_NaranjaTests.m */; };
+		5E1A0D5B18DCA78000F35734 /* NaranjaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A0D5A18DCA78000F35734 /* NaranjaView.m */; };
 		E328F7FA18DB329500290997 /* BirthDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E328F7F918DB329500290997 /* BirthDateViewController.m */; };
 		E328F7FD18DB366A00290997 /* FirstDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E328F7FC18DB366A00290997 /* FirstDateViewController.m */; };
 		E328F80018DB369C00290997 /* DeathDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E328F7FF18DB369C00290997 /* DeathDateViewController.m */; };
@@ -56,6 +57,8 @@
 		03238F3118DB083F00A39F93 /* Media NaranjaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Media NaranjaTests-Info.plist"; sourceTree = "<group>"; };
 		03238F3318DB083F00A39F93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03238F3518DB083F00A39F93 /* Media_NaranjaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Media_NaranjaTests.m; sourceTree = "<group>"; };
+		5E1A0D5918DCA78000F35734 /* NaranjaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaranjaView.h; sourceTree = "<group>"; };
+		5E1A0D5A18DCA78000F35734 /* NaranjaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaranjaView.m; sourceTree = "<group>"; };
 		E328F7F818DB329500290997 /* BirthDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthDateViewController.h; sourceTree = "<group>"; };
 		E328F7F918DB329500290997 /* BirthDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthDateViewController.m; sourceTree = "<group>"; };
 		E328F7FB18DB366A00290997 /* FirstDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDateViewController.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				03238F1918DB083F00A39F93 /* MediaNaranjaAppDelegate.h */,
 				03238F1A18DB083F00A39F93 /* MediaNaranjaAppDelegate.m */,
 				03238F1C18DB083F00A39F93 /* Main.storyboard */,
+				5E1A0D5918DCA78000F35734 /* NaranjaView.h */,
+				5E1A0D5A18DCA78000F35734 /* NaranjaView.m */,
 				E328F7F818DB329500290997 /* BirthDateViewController.h */,
 				E328F7F918DB329500290997 /* BirthDateViewController.m */,
 				03238F1F18DB083F00A39F93 /* MediaNaranjaViewController.h */,
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03238F1718DB083F00A39F93 /* main.m in Sources */,
+				5E1A0D5B18DCA78000F35734 /* NaranjaView.m in Sources */,
 				03238F1B18DB083F00A39F93 /* MediaNaranjaAppDelegate.m in Sources */,
 				03238F2118DB083F00A39F93 /* MediaNaranjaViewController.m in Sources */,
 				E328F7FA18DB329500290997 /* BirthDateViewController.m in Sources */,

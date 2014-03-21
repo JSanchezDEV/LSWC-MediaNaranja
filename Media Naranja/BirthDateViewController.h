@@ -10,4 +10,6 @@
 
 @interface BirthDateViewController : UIViewController
 @property (strong, nonatomic) NSDate* birthDate;
+@property (strong, nonatomic) NSDate* firstDate;
+@property (strong, nonatomic) NSDate* deathDate;
 @end

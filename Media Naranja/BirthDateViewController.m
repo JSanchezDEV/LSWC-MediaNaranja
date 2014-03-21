@@ -19,6 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.birthDatePicker.date = self.birthDate;
+    if (self.firstDate) {
+        [self.birthDatePicker setMaximumDate:self.firstDate];
+    } else if (self.deathDate) {
+        [self.birthDatePicker setMaximumDate:self.deathDate];
+    } else {
+        [self.birthDatePicker setMaximumDate:[NSDate date]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
