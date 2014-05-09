@@ -20,7 +20,6 @@
 }
 
 - (void)dibujaNaranja {
-    UIGraphicsBeginImageContext(self.frame.size);
     CGFloat width = self.bounds.size.width;
     CGFloat height = self.bounds.size.height;
     if (width <= height) {
@@ -29,10 +28,6 @@
     } else {
         [[UIImage imageNamed:@"naranja.png"] drawInRect:CGRectMake((width-height)/2, 0, height, height)];
     }
-    
-    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    self.backgroundColor = [UIColor colorWithPatternImage:img];
 }
 
 - (void)dibujaRectPerc {
@@ -44,9 +39,9 @@
     } else {
         rect = CGRectMake(0, 0, width, height*(1-self.percentage));
     }
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
-    CGContextFillRect(context, rect);
+    UIBezierPath* path = [UIBezierPath bezierPathWithRect:rect];
+    [[UIColor whiteColor] setFill];
+    [path fill];
 }
 
 @end

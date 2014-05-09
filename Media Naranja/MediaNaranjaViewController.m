@@ -49,11 +49,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.birthOKBool = NO;
-    self.firstOKBool = NO;
-    self.deathOKBool = NO;
+    UIApplication *app = [UIApplication sharedApplication];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillTerminate:) name:UIApplicationWillTerminateNotification object:app];
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.fillBirthDate = [defaults objectForKey:@"birthDate"];
+    self.fillFirstDate = [defaults objectForKey:@"firstDate"];
+    self.fillDeathDate = [defaults objectForKey:@"deathDate"];
+    
+    self.birthOKBool = [defaults objectForKey:@"birthDate"] ? YES : NO;
+    self.firstOKBool = [defaults objectForKey:@"firstDate"] ? YES : NO;
+    self.deathOKBool = [defaults objectForKey:@"deathDate"] ? YES : NO;
+    
+    [self rellenaFechas];
+    
     [self.portraitView setHidden:NO];
     [self.landscapeView setHidden:YES];
+    [self calcResult];
     [self refrescaImagen];
 }
 
@@ -109,6 +121,15 @@
     }
 }
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self saveDates];
+}
+
+- (void)appWillTerminate:(NSNotification*)notification {
+    [self saveDates];
+}
+
 - (IBAction)BirthOK:(UIStoryboardSegue*)segue {
     BirthDateViewController *chooseDateVC = segue.sourceViewController;
     NSDateFormatter *format = [[NSDateFormatter alloc]init];
@@ -122,6 +143,14 @@
 
 - (IBAction)BirthCancel:(UIStoryboardSegue*)segue {
     [self refrescaImagen];
+}
+
+- (void)saveDates {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.fillBirthDate forKey:@"birthDate"];
+    [defaults setObject:self.fillFirstDate forKey:@"firstDate"];
+    [defaults setObject:self.fillDeathDate forKey:@"deathDate"];
+    [defaults synchronize];
 }
 
 
@@ -182,6 +211,14 @@
             [self.portraitView setNeedsDisplay];
         }
     }
+}
+
+- (void)rellenaFechas {
+    NSDateFormatter *format = [[NSDateFormatter alloc]init];
+    [format setDateFormat:@"dd-MM-yyyy"];
+    if (self.birthOKBool) self.birthDateLabel.text = [format stringFromDate:self.fillBirthDate];
+    if (self.firstOKBool) self.firstDateLabel.text = [format stringFromDate:self.fillFirstDate];
+    if (self.deathOKBool) self.deathDateLabel.text = [format stringFromDate:self.fillDeathDate];
 }
 
 @end
